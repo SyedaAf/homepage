@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <header class="header">
+      <div class="nav-bar"></div>
+      <div class="image">
+        <img src="images/pexels-photo-2395249.jpeg" alt="My test image" />
+      </div>
+      
+        
+    </header>
+   
+    <main>
+      <div class="project-main">
+      <div class="nav-bar"> <nav>
+     
+        <div class="sidebar-links">
+            <ul>
+              <li>
+                <a href="index.html" title="Home" class="tooltip">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+                    <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                    <path d="M10 12h4v4h-4z"></path>
+                  </svg>
+                  <span class="link hide">Home</span>
+                  <span class="tooltip__content">Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="projectone.html" title="Portfolio" class="tooltip">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-dashboard" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 4h6v8h-6z"></path>
+                    <path d="M4 16h6v4h-6z"></path>
+                    <path d="M14 12h6v8h-6z"></path>
+                    <path d="M14 4h6v4h-6z"></path>
+                  </svg>
+                  <span class="link hide">Project one</span>
+                  <span class="tooltip__content">Project one</span>
+                </a>
+              </li>
+              <li>
+                <a href="projecttwo.html" title="Watchlist" class="tooltip">
+  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                  </svg>
+                  <span class="link hide">Project Two</span>
+                  <span class="tooltip__content">Project Two</span>
+                </a>
+              </li>
+              <li>
+                <a href="#explore" title="Explore" class="tooltip">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M8 16l2 -6l6 -2l-2 6l-6 2"></path>
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  </svg>
+                  <span class="link hide">Explore</span>
+                  <span class="tooltip__content">Explore</span>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+         
+          <div class="expand-btn">
+            <img
+              src="images/right-collapse.svg"
+              alt="Left Collapse"
+            >
+            <span class="hide">
+              
+            </span>
+          </div>
+      </nav></div>
+  
+      <container class="section">
+    <div class="form"> 
+        
+        <fieldset class="container">
+          <h1>Fill The Form</h1> <br>
+        <form id="form-validation">
+          <label for="mail">
+            <span> Email Address:</span><br><br>
+            <input type="email" id="mail" name="mail" placeholder="user@hotmail.com" required minlength="8" />
+            <span class="error" aria-live="polite"></span>
+          </label> <br>
+          <label for="password">
+            <span>Password:</span><br><br>
+            <input type="password" id="password" name="password1" placeholder="Enter Password" required/>
+          </label>
+          <br>
+      
+          <label for="confirm">
+            <span>Confirm Password:</span><br><br>
+            <input type="password" id="confirm_password" name="password2"  placeholder="Confirm Password" required/>
+            <span id = "message" style="color:red"> </span> 
+            </label>
+          <br>
+          
+          <label for="ZIP"> <span>ZIP:</span> <br><br>
+
+          <input type="text" id="ZIP" placeholder="ZIP"/><br> </label><br> <br>
+          <label for="country"> <span>Country:</span> <br> <br>
+          <input type="text" id="country" placeholder="Country"/></label>
+          <br> <br>
+          <input type="submit" value="Submit" class="submit_btn" id="create" onclick="checkPassword(form)"/>
+        </form>
+          
+      </fieldset>
+    </div>
+    
+    </container>
+  </div>
+
+    <footer>
+      <div class="contact"> <h2>Contact Us</h2>
+       <p>
+           Please get in touch if you think our work could be mutually beneficial!<br>
+   
+      123 Random Road
+   
+   Random Town, California 12345 </p>
+   
+   <div class="phone"> 555-555-555 </div>
+   
+   <div class="email">dummyemail@gmail.com </div>
+   <i class="devicon-twitter-original maroon"></i> 
+    <i class="devicon-facebook-plain maroon"></i>
+   </div>
+   <div class="img"> 
+     
+     <source srcset="images/pexels-photo-2395249.jpeg" media="(max-width: 400px)">
+     <img src=images/pexels-photo-2395249.jpeg alt="Flowers">
+   </picture>
+   </div>
+   </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
